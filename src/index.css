@@ -1,76 +1,73 @@
+@charset "UTF-8";
 /**
  * css reset
  * @author ydr.me
  */
-
 *, *::before, *::after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 html {
-    -ms-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
+  -ms-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga", "kern"; }
 
 body, button, input, select, textarea {
-    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;;
-}
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif; }
+
+body {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto; }
 
 li {
-    list-style: none;
-}
+  list-style: none; }
 
 a {
-    text-decoration: none;
-}
+  text-decoration: none; }
 
 b, strong {
-    font-weight: bold;
-}
+  font-weight: bold; }
 
 i, em {
-    font-style: normal;
-}
+  font-style: normal; }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 img {
-    border: 0 none;
-    width: auto \9;
-    max-width: 100%;
-    vertical-align: top;
-    height: auto;
-}
+  border: 0 none;
+  width: auto \9;
+  max-width: 100%;
+  vertical-align: top;
+  height: auto; }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
+  -webkit-appearance: button;
+  cursor: pointer; }
 
 input[type="search"] {
-    -webkit-appearance: textfield;
-}
+  -webkit-appearance: textfield; }
 
 input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 input:focus {
-    outline: none;
-}
+  outline: none; }
 
 input::-webkit-input-speech-button {
-    display: none
-}
+  display: none; }
