@@ -1,7 +1,7 @@
 {
   "name": "blear.css.reset",
-  "version": "1.0.1",
-  "description": "描述",
+  "version": "1.0.2",
+  "description": "CSS 重置",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
   },
