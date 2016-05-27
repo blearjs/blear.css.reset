@@ -17,7 +17,9 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga", "kern"; }
+  -moz-font-feature-settings: "liga", "kern";
+  position: relative;
+  min-height: 100%; }
 
 body, button, input, select, textarea {
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif; }
@@ -57,15 +59,14 @@ img {
   vertical-align: top;
   height: auto; }
 
+button, input {
+  -webkit-appearance: none; }
+
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
   cursor: pointer; }
-
-input[type="search"] {
-  -webkit-appearance: textfield; }
 
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -74,4 +75,7 @@ input:focus {
   outline: none; }
 
 input::-webkit-input-speech-button {
+  display: none; }
+
+input::-ms-clear {
   display: none; }

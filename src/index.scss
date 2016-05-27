@@ -21,6 +21,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga", "kern";
+  position: relative;
+  min-height: 100%;
 }
 
 body, button, input, select, textarea {
@@ -71,16 +73,15 @@ img {
   height: auto;
 }
 
+button, input {
+  -webkit-appearance: none;
+}
+
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
   cursor: pointer;
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
 }
 
 input[type="search"]::-webkit-search-decoration {
@@ -93,4 +94,8 @@ input:focus {
 
 input::-webkit-input-speech-button {
   display: none
+}
+
+input::-ms-clear {
+  display: none;
 }
