@@ -22,7 +22,9 @@ html {
   min-height: 100%; }
 
 body, button, input, select, textarea {
-  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif; }
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  font-size: 100%;
+  overflow: visible; }
 
 code, kbd, pre, samp {
   font-family: Consolas, Menlo, Courier, monospace; }
@@ -59,9 +61,7 @@ img {
   vertical-align: top;
   height: auto; }
 
-button, input {
-  -webkit-appearance: none; }
-
+a,
 button,
 html input[type="button"],
 input[type="reset"],
@@ -71,11 +71,9 @@ input[type="submit"] {
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-input:focus {
-  outline: none; }
-
 input::-webkit-input-speech-button {
   display: none; }
 
-input::-ms-clear {
+input::-ms-clear,
+textarea::-ms-clear {
   display: none; }
