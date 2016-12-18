@@ -10,6 +10,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  // 防止点击的时候闪烁
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -83,24 +84,27 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="search"]::-webkit-search-decoration {
+input,
+button {
+  // webkit ios 去除输入框、按钮的阴影等
   -webkit-appearance: none;
-}
-
-input::-webkit-input-speech-button {
-  display: none
 }
 
 input::-ms-clear,
 textarea::-ms-clear {
+  // IE 去除输入框的 x 号
   display: none;
 }
 
 input[type="search"] {
+  // webkit 去除搜索输入框语音按钮
+  ::-webkit-input-speech-button,
+
+    // webkit 去除搜索输入框的 x 号
   ::-webkit-search-decoration,
   ::-webkit-search-cancel-button,
   ::-webkit-search-results-button,
-  ::-webkit-search-results-decoration{
+  ::-webkit-search-results-decoration {
     display: none;
   }
 }
