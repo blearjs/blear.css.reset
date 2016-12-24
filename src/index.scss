@@ -1,8 +1,8 @@
-@charset "utf-8";
-/**
- * css reset
- * @author ydr.me
- */
+// *
+// * css reset
+// * author ydr.me
+// * updated 2016年12月24日13:56:50
+// *
 
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -78,13 +78,22 @@ img {
 
 a,
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   cursor: pointer;
 }
 
-input,
+[type="button"],
+[type="submit"],
+[type="reset"],
+[type="text"],
+[type="number"],
+[type="tel"],
+[type="date"],
+[type="time"],
+[type="datetime"],
+[type="datetime-local"],
 button {
   // webkit ios 去除输入框、按钮的阴影等
   -webkit-appearance: none;
@@ -96,15 +105,32 @@ textarea::-ms-clear {
   display: none;
 }
 
-input[type="search"] {
+[type="search"]::-webkit-input-speech-button,
+[type="search"]::-webkit-search-decoration,
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-results-button,
+[type="search"]::-webkit-search-results-decoration {
   // webkit 去除搜索输入框语音按钮
-  ::-webkit-input-speech-button,
+  // webkit 去除搜索输入框的 x 号
+  display: none;
+  -webkit-appearance: none;
+}
 
-    // webkit 去除搜索输入框的 x 号
-  ::-webkit-search-decoration,
-  ::-webkit-search-cancel-button,
-  ::-webkit-search-results-button,
-  ::-webkit-search-results-decoration {
-    display: none;
-  }
+// * Remove the inner border and padding in Firefox.
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+//*
+// * 1. Correct the inability to style clickable types in iOS and Safari.
+// * 2. Change font properties to `inherit` in Safari.
+::-webkit-file-upload-button {
+  // 1
+  -webkit-appearance: button;
+  // 2
+  font: inherit;
 }
