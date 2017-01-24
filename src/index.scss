@@ -18,10 +18,10 @@ html {
   -ms-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga", "kern";
+  //text-rendering: optimizeLegibility;
+  //-webkit-font-smoothing: antialiased;
+  //-moz-osx-font-smoothing: grayscale;
+  //-moz-font-feature-settings: "liga", "kern";
   position: relative;
   min-height: 100%;
 }
