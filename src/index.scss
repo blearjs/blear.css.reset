@@ -74,6 +74,7 @@ img {
   border: 0 none;
   max-width: 100%;
   vertical-align: top;
+//  这里不添加 height: auto; 是为了 img 的 width、height 属性可以控制宽、高展示
 }
 
 a,
