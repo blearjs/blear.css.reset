@@ -1,6 +1,6 @@
 {
   "name": "blear.css.reset",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "CSS 重置",
   "scripts": {
     "live": "browser-sync start --config bs-config.js"
