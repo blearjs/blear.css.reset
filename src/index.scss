@@ -33,6 +33,10 @@ body, button, input, select, textarea {
   overflow: visible;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 code, kbd, pre, samp {
   font-family: Consolas, Menlo, Courier, monospace;
 }
